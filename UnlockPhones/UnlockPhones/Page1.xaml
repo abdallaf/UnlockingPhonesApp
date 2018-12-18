@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UnlockPhones.Page1">
+
+
+        <StackLayout  Margin="10" Padding="10" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="WELCOME TO ABDALLA PHONES UNLOCKING APP"
+           HorizontalOptions="Center"
+           VerticalOptions="Center" TextColor="Blue" />
+            <Label Text="Unlock your phone to use it with any network provider worldwide" 
+                   TextColor="Red"></Label>
+            <Image Source="unlock.jpg"></Image>
+            <Button Text="GET STARTED" Clicked="Button_Clicked" BackgroundColor="Green"></Button>
+        </StackLayout>
+ 
+</ContentPage>

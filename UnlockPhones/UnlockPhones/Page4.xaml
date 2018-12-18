@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UnlockPhones.Page4">
+    <ContentPage.Content>
+        <StackLayout Margin="10" Padding="10">
+            <Label Text="Iphone unlocking" TextColor="Blue"/>
+            <Label Text="€79.99" FontSize="18" TextColor="Red"></Label>
+            <Entry x:Name="EnteryIMEI"  Placeholder="Enter IMEI Number" Keyboard="Numeric"></Entry>
+            <Picker Title="Phone Model">
+                <Picker.Items>
+                    <x:String>Iphone 5</x:String>
+                    <x:String>Iphone 5C</x:String>
+                    <x:String>Iphone 5S</x:String>
+                    <x:String>Iphone 6</x:String>
+                    <x:String>Iphone 6+</x:String>
+                    <x:String>Iphone 6S</x:String>
+                    <x:String>Iphone 6S+</x:String>
+                    <x:String>Iphone 7</x:String>
+                    <x:String>Iphone 7+</x:String>
+                    <x:String>Iphone 8</x:String>
+                    <x:String>Iphone 8+</x:String>
+                    <x:String>Iphone X</x:String>
+                    <x:String>Iphone X+</x:String>
+                    <x:String>Iphone XS</x:String>
+                </Picker.Items>
+            </Picker>
+            <Picker Title="Network Provider">
+                <Picker.Items>
+                    <x:String>THREE</x:String>
+                    <x:String>EIR</x:String>
+                    <x:String>VODAFONE</x:String>
+                    <x:String>TESCO</x:String>
+                </Picker.Items>
+            </Picker>
+            <Entry  x:Name="EnteryEmail"  Placeholder="Email"></Entry>
+            <Editor Placeholder="Add Comment"></Editor>
+            <Button Text="CONTINUE" BackgroundColor="Green"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

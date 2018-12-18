@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UnlockPhones.Page3">
+    
+    <StackLayout Margin="10" Padding="10">
+            <Label Text="Samsung unlocking" TextColor="Blue"/>
+        <StackLayout Orientation="Horizontal">
+            <Image Source="samsung.jpg" WidthRequest="100" HeightRequest="100"></Image>
+            <Label Text="€39.99" FontSize="18" TextColor="Red" ></Label>
+        </StackLayout>
+        <Entry x:Name="EnteryIMEI"  Placeholder="Enter IMEI Number" Keyboard="Numeric"></Entry>
+            <Picker Title="Phone Model">
+                <Picker.Items>
+                    <x:String>Galaxy S</x:String>
+                    <x:String>Galaxy S2</x:String>
+                    <x:String>Galaxy S3</x:String>
+                    <x:String>Galaxy S4</x:String>
+                    <x:String>Galaxy S5</x:String>
+                    <x:String>Galaxy S6</x:String>
+                    <x:String>Galaxy S7</x:String>
+                    <x:String>Galaxy S8</x:String>
+                    <x:String>Galaxy S9</x:String>
+                    <x:String>Other</x:String>
+                </Picker.Items>
+            </Picker>
+            <Picker Title="Network Provider">
+                <Picker.Items>
+                    <x:String>THREE</x:String>
+                    <x:String>EIR</x:String>
+                    <x:String>VODAFONE</x:String>
+                    <x:String>TESCO</x:String>
+                </Picker.Items>
+            </Picker>
+            <Entry  x:Name="EnteryEmail"  Placeholder="Email"></Entry>
+            <Editor Placeholder="Add Comment"></Editor>
+            <Button Text="CONTINUE" BackgroundColor="Green" Clicked="Button_Clicked"></Button>
+        </StackLayout>
+</ContentPage>
