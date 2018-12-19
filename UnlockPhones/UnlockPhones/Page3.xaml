@@ -6,7 +6,7 @@
     <StackLayout Margin="10" Padding="10">
             <Label Text="Samsung unlocking" TextColor="Blue"/>
         <StackLayout Orientation="Horizontal">
-            <Image Source="samsung.jpg" WidthRequest="100" HeightRequest="100"></Image>
+            <Image Source="samsung.jpg" WidthRequest="90" HeightRequest="90"></Image>
             <Label Text="€39.99" FontSize="18" TextColor="Red" ></Label>
         </StackLayout>
         <Entry x:Name="EnteryIMEI"  Placeholder="Enter IMEI Number" Keyboard="Numeric"></Entry>

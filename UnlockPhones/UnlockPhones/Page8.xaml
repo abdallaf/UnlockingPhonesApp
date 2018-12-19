@@ -3,12 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UnlockPhones.Page8">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout VerticalOptions="Center">
+            <Image Source="visa.png"></Image>
             <Entry Text="{Binding CreditCardNumber}" Placeholder="Enter your credit card number"></Entry>
             <Entry Text="{Binding CreditCardName}" Placeholder="Enter name as in your card"></Entry>
             <StackLayout Orientation="Horizontal">
                 <Entry Text="{Binding ExpiryDate}" Placeholder="Expiry date"></Entry>
                 <Entry Text="{Binding CVV}" Placeholder="CVV"></Entry>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                <Button Text="Confirm" BackgroundColor="Green" Clicked="Button_Clicked"></Button>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

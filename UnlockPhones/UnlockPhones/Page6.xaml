@@ -5,7 +5,10 @@
     <ContentPage.Content>
         <StackLayout Margin="10" Padding="10">
             <Label Text="Huawei unlocking" TextColor="Blue"/>
-            <Label Text="€29.99" FontSize="18" TextColor="Red"></Label>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="huawei.jpg" WidthRequest="90" HeightRequest="90"></Image>
+                <Label Text="€29.99" FontSize="18" TextColor="Red"></Label>
+            </StackLayout>
             <Entry x:Name="EnteryIMEI"  Placeholder="Enter IMEI Number" Keyboard="Numeric"></Entry>
             <Entry  x:Name="EnteryModel"  Placeholder="Huawei Model"></Entry>
             <Picker Title="Network Provider">
@@ -18,7 +21,7 @@
             </Picker>
             <Entry  x:Name="EnteryEmail"  Placeholder="Email"></Entry>
             <Editor Placeholder="Add Comment"></Editor>
-            <Button Text="CONTINUE" BackgroundColor="Green"></Button>
+            <Button Text="CONTINUE" BackgroundColor="Green" Clicked="Button_Clicked"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

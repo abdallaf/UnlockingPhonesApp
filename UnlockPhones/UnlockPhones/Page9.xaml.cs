@@ -10,16 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace UnlockPhones
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Page7 : ContentPage
+	public partial class Page9 : ContentPage
 	{
-		public Page7 ()
+		public Page9 ()
 		{
 			InitializeComponent ();
 		}
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Page8());
+            Navigation.PushAsync(new Page1());
         }
     }
 }

@@ -5,16 +5,19 @@
     <ContentPage.Content>
         <StackLayout Margin="10" Padding="10" BackgroundColor="Yellow">
             <Label Text="Select your Manufacturer" TextColor="Red"></Label>
-            <Button Text="Samsung Unlocking" TextColor="Blue" BackgroundColor="White"
+            <Button Text="Samsung Unlocking" TextColor="White" BackgroundColor="Green"
                      Clicked="Button_Clicked"></Button>
-            <Button Text="Iphone Unlocking" TextColor="Blue" BackgroundColor="White"
+            <Button Text="Iphone Unlocking" TextColor="White" BackgroundColor="Green"
                      Clicked="Button_Clicked_1"></Button>
-            <Button Text="HTC Unlocking" TextColor="Blue" BackgroundColor="White"
+            <Button Text="HTC Unlocking" TextColor="White" BackgroundColor="Green"
                      Clicked="Button_Clicked_2"></Button>
-            <Button Text="Huawei Unlocking" TextColor="Blue" BackgroundColor="White"
+            <Button Text="Huawei Unlocking" TextColor="White" BackgroundColor="Green"
                      Clicked="Button_Clicked_3"></Button>
-            <Button Text="Alcatel Unlocking" TextColor="Blue" BackgroundColor="White"
+            <Button Text="Alcatel Unlocking" TextColor="White" BackgroundColor="Green"
                      Clicked="Button_Clicked_4"></Button>
+            <Label Text="1. Select your phone Manufacturer from the list above"></Label>
+            <Label Text="2. To find your IMEI number simply dial the sequence *#06# into the phone.The unique 15 digit IMEI code of your cell phone will be instantly displayed.">
+            </Label>
 
 
 
