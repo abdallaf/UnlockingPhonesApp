@@ -6,11 +6,11 @@
         <StackLayout Margin="10" Padding="10">
             <Label Text="Iphone unlocking" TextColor="Blue"/>
             <StackLayout Orientation="Horizontal">
-                <Image Source="iphone.jpg" WidthRequest="90" HeightRequest="90"></Image>
+                <Image Source="Images/iphone.jpg" WidthRequest="90" HeightRequest="90"></Image>
                 <Label Text="€79.99" FontSize="18" TextColor="Red"></Label>
             </StackLayout>
             <Entry x:Name="EnteryIMEI"  Placeholder="Enter IMEI Number" Keyboard="Numeric"></Entry>
-            <Picker Title="Phone Model">
+            <Picker Title="Phone Model" x:Name="PickModel">
                 <Picker.Items>
                     <x:String>Iphone 5</x:String>
                     <x:String>Iphone 5C</x:String>
@@ -28,7 +28,7 @@
                     <x:String>Iphone XS</x:String>
                 </Picker.Items>
             </Picker>
-            <Picker Title="Network Provider">
+            <Picker Title="Network Provider" x:Name="PickNetwork">
                 <Picker.Items>
                     <x:String>THREE</x:String>
                     <x:String>EIR</x:String>
@@ -38,7 +38,9 @@
             </Picker>
             <Entry  x:Name="EnteryEmail"  Placeholder="Email"></Entry>
             <Editor Placeholder="Add Comment"></Editor>
-            <Button Text="CONTINUE" BackgroundColor="Green" Clicked="Button_Clicked"></Button>
+            <Button Text="Verify" Clicked="CheckUserInput" BackgroundColor="Orange"></Button>
+            <Button Text="CONTINUE" BackgroundColor="Green" Clicked="Button_Clicked" 
+                    IsEnabled="False" x:Name="continueBtn"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

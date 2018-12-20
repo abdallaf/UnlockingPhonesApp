@@ -2,17 +2,21 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UnlockPhones.Page1"
-             BackgroundColor="AliceBlue">
-          
+             BackgroundColor="Aqua">
+          <!--Home page-->
+    <ScrollView HorizontalOptions="Center" VerticalOptions="Center">
         <StackLayout  Margin="10" Padding="0" HorizontalOptions="Center" VerticalOptions="Center">
-        <Button Text="UNLOCK PHONES" BackgroundColor="Red" TextColor="White" VerticalOptions="Center"></Button>
+            <Button Text="UNLOCK PHONES" BackgroundColor="Red" TextColor="White" VerticalOptions="Center"></Button>
             <Label Text="WELCOME TO ABDALLA PHONES UNLOCKING APP"
            HorizontalOptions="Center"
            VerticalOptions="Center" TextColor="Blue" />
             <Label Text="Unlock your phone to use it with any network provider worldwide" 
                    TextColor="Red"></Label>
-            <Image Source="unlock.jpg"></Image>
+            <Image Source="Images/unlock.jpg"/>
+
             <Button Text="GET STARTED" Clicked="Button_Clicked" BackgroundColor="Green"></Button>
         </StackLayout>
- 
+    </ScrollView>
+
+
 </ContentPage>

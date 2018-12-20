@@ -14,8 +14,11 @@ namespace UnlockPhones
 	{
 		public Page1 ()
 		{
-			InitializeComponent ();
-		}
+            var image = new Image { Source = "unlock.jpg" };
+            InitializeComponent ();
+            image.Source = Device.RuntimePlatform == Device.Android ? ImageSource.FromFile("unlock.jpg") : ImageSource.FromFile("Images/unlock.jpg");
+
+        }
 
         private void Button_Clicked(object sender, EventArgs e)
         {

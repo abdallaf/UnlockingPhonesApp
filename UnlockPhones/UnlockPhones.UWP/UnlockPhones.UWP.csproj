@@ -146,6 +146,9 @@
     <PackageReference Include="Xamarin.Forms" Version="3.3.0.967583" />
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.5" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\NewFolder1\" />
+  </ItemGroup>
   <Import Project="..\UnlockPhones\UnlockPhones.projitems" Label="Shared" />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

@@ -1,18 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="UnlockPhones.Page8">
+             x:Class="UnlockPhones.Page8" BackgroundColor="Aqua">
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center">
             <Image Source="visa.png"></Image>
-            <Entry Text="{Binding CreditCardNumber}" Placeholder="Enter your credit card number"></Entry>
-            <Entry Text="{Binding CreditCardName}" Placeholder="Enter name as in your card"></Entry>
+            <Entry Text="{Binding CreditCardNumber}" x:Name="EntryCreditCard" Placeholder="Enter your credit card number"></Entry>
+            <Entry Text="{Binding CreditCardName}" x:Name="EntryName" Placeholder="Enter name as in your card"></Entry>
             <StackLayout Orientation="Horizontal">
-                <Entry Text="{Binding ExpiryDate}" Placeholder="Expiry date"></Entry>
-                <Entry Text="{Binding CVV}" Placeholder="CVV"></Entry>
+                <Entry Text="{Binding ExpiryDate}" x:Name="EnteryDate" Placeholder="Expiry date"></Entry>
+                <Entry Text="{Binding CVV}" x:Name="EnteryCVV" Placeholder="CVV"></Entry>
             </StackLayout>
             <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-                <Button Text="Confirm" BackgroundColor="Green" Clicked="Button_Clicked"></Button>
+                <Button Text="Verify" Clicked="CheckUserInput" BackgroundColor="Orange"></Button>
+                <Button Text="Confirm" BackgroundColor="Green" Clicked="Button_Clicked" 
+                        IsEnabled="False" x:Name="confirmBtn"></Button>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

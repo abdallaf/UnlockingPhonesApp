@@ -16,7 +16,26 @@ namespace UnlockPhones
 		{
 			InitializeComponent ();
 		}
+        private async void CheckUserInput(object sender, EventArgs e)
+        {
+            bool isInputEmpty = string.IsNullOrEmpty(EntryCreditCard.Text);
+            bool isInputEmpty1 = string.IsNullOrEmpty(EntryName.Text);
+            bool isInputEmpty2 = string.IsNullOrEmpty(EnteryDate.Text);
+            bool isInputEmpty3 = string.IsNullOrEmpty(EnteryCVV.Text);
 
+            if (isInputEmpty || isInputEmpty1 || isInputEmpty2 || isInputEmpty3)
+            {
+                await DisplayAlert("Failed", "Please fill all requirements and try again", "Retry");
+
+            }
+         
+            else
+            {
+                confirmBtn.IsEnabled = true;
+                await DisplayAlert("Successful", "Please tap confirm", "OK");
+            }
+
+        }
         private void Button_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Page9());

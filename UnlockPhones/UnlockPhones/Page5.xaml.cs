@@ -16,7 +16,33 @@ namespace UnlockPhones
 		{
 			InitializeComponent ();
 		}
+        private async void CheckUserInput(object sender, EventArgs e)
+        {
+            bool isImeiEmpty = string.IsNullOrEmpty(EnteryIMEI.Text);
+            bool isEmailEmpty = string.IsNullOrEmpty(EnteryEmail.Text);
 
+            if (isImeiEmpty || isEmailEmpty)
+            {
+                await DisplayAlert("Failed", "Please fill all requirements and try again", "Retry");
+
+            }
+            else if (PickModel.SelectedIndex == -1)
+            {
+                await DisplayAlert("Error", "Please select your phone model", "OK");
+                return;
+            }
+            else if (PickNetwork.SelectedIndex == -1)
+            {
+                await DisplayAlert("Error", "Please select your Network provider", "OK");
+                return;
+            }
+            else
+            {
+                continueBtn.IsEnabled = true;
+                await DisplayAlert("Successful", "Please tap Continue", "OK");
+            }
+
+        }
         private void Button_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Page8());

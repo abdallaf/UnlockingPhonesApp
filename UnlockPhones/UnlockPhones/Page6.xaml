@@ -6,12 +6,29 @@
         <StackLayout Margin="10" Padding="10">
             <Label Text="Huawei unlocking" TextColor="Blue"/>
             <StackLayout Orientation="Horizontal">
-                <Image Source="huawei.jpg" WidthRequest="90" HeightRequest="90"></Image>
+                <Image Source="Images/huawei.jpg" WidthRequest="90" HeightRequest="90"></Image>
                 <Label Text="€29.99" FontSize="18" TextColor="Red"></Label>
             </StackLayout>
             <Entry x:Name="EnteryIMEI"  Placeholder="Enter IMEI Number" Keyboard="Numeric"></Entry>
-            <Entry  x:Name="EnteryModel"  Placeholder="Huawei Model"></Entry>
-            <Picker Title="Network Provider">
+            <Picker Title="Phone Model" x:Name="PickModel">
+                <Picker.Items>
+                    <x:String>Huawei Y5</x:String>
+                    <x:String>Huawei Y5II</x:String>
+                    <x:String>Huawei Y6</x:String>
+                    <x:String>Huawei Y6 2017</x:String>
+                    <x:String>Huawei Y6 2018</x:String>
+                    <x:String>Huawei G7</x:String>
+                    <x:String>Huawei P8</x:String>
+                    <x:String>Huawei P8 Lite</x:String>
+                    <x:String>Huawei P9</x:String>
+                    <x:String>Huawei P10</x:String>
+                    <x:String>Huawei P Smart</x:String>
+                    <x:String>Huawei P20</x:String>
+                    <x:String>Huawei P20 Pro</x:String>
+                    <x:String>Other</x:String>
+                </Picker.Items>
+            </Picker>
+            <Picker Title="Network Provider" x:Name="PickNetwork">
                 <Picker.Items>
                     <x:String>THREE</x:String>
                     <x:String>EIR</x:String>
@@ -21,7 +38,9 @@
             </Picker>
             <Entry  x:Name="EnteryEmail"  Placeholder="Email"></Entry>
             <Editor Placeholder="Add Comment"></Editor>
-            <Button Text="CONTINUE" BackgroundColor="Green" Clicked="Button_Clicked"></Button>
+            <Button Text="Verify" Clicked="CheckUserInput" BackgroundColor="Orange"></Button>
+            <Button Text="CONTINUE" BackgroundColor="Green" Clicked="Button_Clicked" 
+                    IsEnabled="False" x:Name="continueBtn"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

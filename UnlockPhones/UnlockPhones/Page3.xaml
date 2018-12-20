@@ -6,12 +6,27 @@
     <StackLayout Margin="10" Padding="10">
             <Label Text="Samsung unlocking" TextColor="Blue"/>
         <StackLayout Orientation="Horizontal">
-            <Image Source="samsung.jpg" WidthRequest="90" HeightRequest="90"></Image>
+            <Image Source="Images/samsung.jpg" WidthRequest="90" HeightRequest="90"></Image>
             <Label Text="€39.99" FontSize="18" TextColor="Red" ></Label>
         </StackLayout>
         <Entry x:Name="EnteryIMEI"  Placeholder="Enter IMEI Number" Keyboard="Numeric"></Entry>
-            <Picker Title="Phone Model">
+            <Picker Title="Phone Model" x:Name="PickModel">
                 <Picker.Items>
+                    <x:String>Galaxy A3</x:String>
+                    <x:String>Galaxy A5</x:String>
+                    <x:String>Galaxy A6</x:String>
+                    <x:String>Galaxy A7</x:String>
+                    <x:String>Galaxy A8</x:String>
+                    <x:String>Galaxy J1</x:String>
+                    <x:String>Galaxy J2</x:String>
+                    <x:String>Galaxy J3</x:String>
+                    <x:String>Galaxy J5</x:String>
+                    <x:String>Galaxy Note</x:String>
+                    <x:String>Galaxy Note 2</x:String>
+                    <x:String>Galaxy Note 3</x:String>
+                    <x:String>Galaxy Note 4</x:String>
+                    <x:String>Galaxy Note 5</x:String>
+                    <x:String>Galaxy Note 8</x:String>
                     <x:String>Galaxy S</x:String>
                     <x:String>Galaxy S2</x:String>
                     <x:String>Galaxy S3</x:String>
@@ -24,7 +39,7 @@
                     <x:String>Other</x:String>
                 </Picker.Items>
             </Picker>
-            <Picker Title="Network Provider">
+            <Picker Title="Network Provider" x:Name="PickNetwork">
                 <Picker.Items>
                     <x:String>THREE</x:String>
                     <x:String>EIR</x:String>
@@ -34,6 +49,8 @@
             </Picker>
             <Entry  x:Name="EnteryEmail"  Placeholder="Email"></Entry>
             <Editor Placeholder="Add Comment"></Editor>
-            <Button Text="CONTINUE" BackgroundColor="Green" Clicked="Button_Clicked"></Button>
-        </StackLayout>
+        <Button Text="Verify" Clicked="CheckUserInput" BackgroundColor="Orange"></Button>
+        <Button Text="CONTINUE" BackgroundColor="Green" Clicked="Button_Clicked" 
+                    IsEnabled="False" x:Name="continueBtn"></Button>
+    </StackLayout>
 </ContentPage>
