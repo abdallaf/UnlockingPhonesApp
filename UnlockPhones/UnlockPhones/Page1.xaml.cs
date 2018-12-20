@@ -14,12 +14,13 @@ namespace UnlockPhones
 	{
 		public Page1 ()
 		{
+            //Local images to be used in different platforms
             var image = new Image { Source = "unlock.jpg" };
             InitializeComponent ();
             image.Source = Device.RuntimePlatform == Device.Android ? ImageSource.FromFile("unlock.jpg") : ImageSource.FromFile("Images/unlock.jpg");
 
         }
-
+        //navigation page when button isclicked
         private void Button_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Page2());

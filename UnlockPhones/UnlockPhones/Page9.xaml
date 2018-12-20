@@ -1,15 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="UnlockPhones.Page9">
+             x:Class="UnlockPhones.Page9" BackgroundColor="Aqua">
+    <!--page to confirm order has been placed-->
     <ContentPage.Content>
-        <StackLayout Margin="10" Padding="10" >
-            <Image Source="arrow.png"></Image>
+        <StackLayout Margin="10" Padding="10" VerticalOptions="Center" HorizontalOptions="Center">
+            <Image Source="Images/arrow.png"></Image>
             <Label Text="Congratulations! your order has been placed" TextColor="Green"/>
             <Label Text="Thank you for shopping with us."/>
             <Label Text="We will contact you via email as soon as your code is generated"></Label>
+            <!--button to return to Home page-->
             <Button Text="HOME" BackgroundColor="Yellow" Clicked="Button_Clicked"></Button>
-            <!--comment-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

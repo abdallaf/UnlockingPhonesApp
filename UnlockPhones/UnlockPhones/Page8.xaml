@@ -2,11 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UnlockPhones.Page8" BackgroundColor="Aqua">
+    <!--Payment page to make payment-->
     <ContentPage.Content>
-        <StackLayout VerticalOptions="Center">
-            <Image Source="visa.png"></Image>
-            <Entry Text="{Binding CreditCardNumber}" x:Name="EntryCreditCard" Placeholder="Enter your credit card number"></Entry>
-            <Entry Text="{Binding CreditCardName}" x:Name="EntryName" Placeholder="Enter name as in your card"></Entry>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Image Source="Images/visa.png"></Image>
+            <Entry Text="{Binding CreditCardNumber}" x:Name="EntryCreditCard" Placeholder="Card Number :   xxxx xxxx xxxx xxxx"></Entry>
+            <Entry Text="{Binding CreditCardName}" x:Name="EntryName" Placeholder="Name on Card"></Entry>
             <StackLayout Orientation="Horizontal">
                 <Entry Text="{Binding ExpiryDate}" x:Name="EnteryDate" Placeholder="Expiry date"></Entry>
                 <Entry Text="{Binding CVV}" x:Name="EnteryCVV" Placeholder="CVV"></Entry>

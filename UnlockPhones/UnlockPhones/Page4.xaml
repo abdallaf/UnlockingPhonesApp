@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UnlockPhones.Page4">
+    <!--Iphone unlocking page-->
     <ContentPage.Content>
         <StackLayout Margin="10" Padding="10">
             <Label Text="Iphone unlocking" TextColor="Blue"/>
@@ -10,6 +11,7 @@
                 <Label Text="€79.99" FontSize="18" TextColor="Red"></Label>
             </StackLayout>
             <Entry x:Name="EnteryIMEI"  Placeholder="Enter IMEI Number" Keyboard="Numeric"></Entry>
+            <!--select your phone model-->
             <Picker Title="Phone Model" x:Name="PickModel">
                 <Picker.Items>
                     <x:String>Iphone 5</x:String>
@@ -28,6 +30,7 @@
                     <x:String>Iphone XS</x:String>
                 </Picker.Items>
             </Picker>
+            <!--select your phone network provider-->
             <Picker Title="Network Provider" x:Name="PickNetwork">
                 <Picker.Items>
                     <x:String>THREE</x:String>
@@ -38,6 +41,7 @@
             </Picker>
             <Entry  x:Name="EnteryEmail"  Placeholder="Email"></Entry>
             <Editor Placeholder="Add Comment"></Editor>
+            <!--Button to verify that all entery has been filled -->
             <Button Text="Verify" Clicked="CheckUserInput" BackgroundColor="Orange"></Button>
             <Button Text="CONTINUE" BackgroundColor="Green" Clicked="Button_Clicked" 
                     IsEnabled="False" x:Name="continueBtn"></Button>

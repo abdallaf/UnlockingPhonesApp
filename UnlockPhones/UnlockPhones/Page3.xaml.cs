@@ -19,6 +19,7 @@ namespace UnlockPhones
 			InitializeComponent ();
 
         }
+        //method to check if user has input all filled requirements
         private async void CheckUserInput(object sender, EventArgs e)
         {
             bool isImeiEmpty = string.IsNullOrEmpty(EnteryIMEI.Text);
@@ -46,6 +47,7 @@ namespace UnlockPhones
             }
  
         }
+        //navigate to payment page
         private void Button_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Page8());

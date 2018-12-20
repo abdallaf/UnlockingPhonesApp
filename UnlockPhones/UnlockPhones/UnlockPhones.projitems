@@ -108,11 +108,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)Images\alcatel.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\arrow.png" />
     <Content Include="$(MSBuildThisFileDirectory)Images\htc.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Images\huawei.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Images\iphone.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Images\samsung.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Images\unlock.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\visa.png" />
     <Content Include="$(MSBuildThisFileDirectory)Images\visadebit.png" />
   </ItemGroup>
 </Project>

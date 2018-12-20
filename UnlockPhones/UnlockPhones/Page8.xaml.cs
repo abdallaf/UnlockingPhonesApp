@@ -16,6 +16,7 @@ namespace UnlockPhones
 		{
 			InitializeComponent ();
 		}
+        //method to verify user has filled all entries required
         private async void CheckUserInput(object sender, EventArgs e)
         {
             bool isInputEmpty = string.IsNullOrEmpty(EntryCreditCard.Text);
@@ -36,6 +37,7 @@ namespace UnlockPhones
             }
 
         }
+        //method to verify and checkout
         private void Button_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Page9());

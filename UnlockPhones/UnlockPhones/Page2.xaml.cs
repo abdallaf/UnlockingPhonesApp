@@ -16,7 +16,7 @@ namespace UnlockPhones
 		{
 			InitializeComponent ();
 		}
-
+        //navigate to an other page when model manufacturer is selected
         private void Button_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Page3());
